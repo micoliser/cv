@@ -3,21 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Contact Samuel</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1>My Contact Details</h1>
-    <p>Phone Number: 08128336815, 07033913942</p>
-    <p>Email: micoliser@gmail.com, samueliwelumo@gmail.com</p>
+  <body style="background-color:  #f2f2f2">
+    <header>
+      <h1>My Contact Details</h1>
+      <p>Phone Number: 08128336815, 07033913942</p>
+      <a href="https://www.facebook.com/samuelmicoliser">Facebook</a>
+      <a href="https://instagram.com/micoliser_official">Instagram</a>
+      <a href="https://www.linkedin.com/in/samuel-iwelumo-8a43a6219">LinkedIn</a>
+      <p>Email: micoliser@gmail.com, samueliwelumo@gmail.com</p>
+    </header>
     <hr>
-    <form action="mailto:samueliwelumo@gmail.com" method="post">
-      <label>Date: </label>
-      <input type="date" name="Date"><br>
-      <label>Name: </label>
-      <input type="text" name="Name"><br>
-      <label>Email: </label>
-      <input type="email" name="Email"><br>
-      <label>Message: </label>
-      <textarea name="message" rows="8" cols="25"></textarea>
-    </form>
+    <div>
+      <form action="mailto:samueliwelumo@gmail.com" method="post">
+        <label for="date">Date: </label>
+        <input type="date" name="Date" id = "date">
+        <label for="fname"> First Name: </label>
+        <input type="text" name="firstname" id = "fname">
+        <label for="lname">Last Name: </label>
+        <input type="text" name="lastname" id = "lname">
+        <label for="email">Email: </label>
+        <input type="email" name="Email" id = "email">
+        <label for="message">Message: </label>
+        <textarea name="message" rows="8" cols="25" id = "message"></textarea>
+        <input type="submit" name="submit">
+      </form>
+    </div>
   </body>
 </html>
